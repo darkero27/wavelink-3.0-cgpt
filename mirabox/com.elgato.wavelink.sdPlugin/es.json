@@ -1,0 +1,312 @@
+{
+    "Name": "Wave Link",
+    "Category": "Wave Link",
+    "Description": "Controla la aplicación de mezcla de audio Elgato Wave Link.",
+    "com.elgato.wavelink.inputaction": {
+        "Name": "Entrada",
+        "Tooltip": "Controla el volumen del micrófono y las apps",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "Ajustar",
+                "Touch": "Silenciar"
+            }
+        }
+    },
+    "com.elgato.wavelink.mixermute": {
+        "Name": "Entrada",
+        "Tooltip": "Controla el volumen del micrófono y las apps",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemixer": {
+        "Name": "Entrada",
+        "Tooltip": "Controla el volumen del micrófono y las apps",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemixer": {
+        "Name": "Entrada",
+        "Tooltip": "Controla el volumen del micrófono y las apps",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.outputaction": {
+        "Name": "Salida",
+        "Tooltip": "Controla la mezcla de monitorización y de streaming",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "Ajustar",
+                "Touch": "Silenciar"
+            }
+        }
+    },
+    "com.elgato.wavelink.monitormute": {
+        "Name": "Salida",
+        "Tooltip": "Controla la mezcla de monitorización y de streaming",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemonitor": {
+        "Name": "Salida",
+        "Tooltip": "Controla la mezcla de monitorización y de streaming",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemonitor": {
+        "Name": "Salida",
+        "Tooltip": "Controla la mezcla de monitorización y de streaming",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchmonitoring": {
+        "Name": "Salida",
+        "Tooltip": "Controla la mezcla de monitorización y de streaming",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.hardwareaction": {
+        "Name": "Dispositivo",
+        "Tooltip": "Gestiona el hardware de audio y los ajustes",
+        "States": [
+            {
+                "Name": "Silenciar"
+            },
+            {
+                "Name": "Desactivar silencio"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setmonitormixoutput": {
+        "Name": "Dispositivo",
+        "Tooltip": "Gestiona el hardware de audio y los ajustes"
+    },
+    "com.elgato.wavelink.togglemonitormixoutput": {
+        "Name": "Dispositivo",
+        "Tooltip": "Gestiona el hardware de audio y los ajustes"
+    },
+    "com.elgato.wavelink.setmicsettings": {
+        "Name": "Dispositivo",
+        "Tooltip": "Gestiona el hardware de audio y los ajustes"
+    },
+    "com.elgato.wavelink.effectaction": {
+        "Name": "Efectos",
+        "Tooltip": "Gestiona efectos como ecualización y eliminación de ruido",
+        "States": [
+            {
+                "Name": "Activar"
+            },
+            {
+                "Name": "Desactivar"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffect": {
+        "Name": "Efectos",
+        "Tooltip": "Gestiona efectos como ecualización y eliminación de ruido",
+        "States": [
+            {
+                "Name": "Activar"
+            },
+            {
+                "Name": "Desactivar"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffectchain": {
+        "Name": "Efectos",
+        "Tooltip": "Gestiona efectos como ecualización y eliminación de ruido",
+        "States": [
+            {
+                "Name": "Activar"
+            },
+            {
+                "Name": "Desactivar"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchprofiles": {
+        "Name": "Cambiar de perfil",
+        "Tooltip": "Cambiar de perfil"
+    },
+    "Localization": {
+        "PI": {
+            "msgLaunchApp": "Abre Wave Link",
+            "msgUpdateApp": "Actualiza la app Wave Link para continuar",
+            "msgUpdateAppForFeature": "Actualiza la app Wave Link para usar esta función",
+            "msgUpdateAppLink": "Descárgala aquí",
+            "msgUpdatePlugin": "Actualiza el plugin Wave Link para continuar",
+            "msgPlatformNotSupported": "Esta función estará disponible pronto",
+            "msgNoMicrophoneConnected": "Conecta un dispositivo Wave para continuar",
+            "msgDeviceNotSupported": "No es compatible con tu dispositivo Wave",
+            "micSettings": {
+                "label": "Acción",
+                "none": "Selecciona…",
+                "adjustGain": "Ajustar ganancia",
+                "setGain": "Definir ganancia",
+                "adjustOutput": "Ajustar volumen de salida",
+                "setOutput": "Definir volumen de salida",
+                "adjustMic/PcBalance": "Ajustar mezcla de micrófono/PC",
+                "setMic/PcBalance": "Definir mezcla de micrófono/PC",
+                "setLowcut": "Activar/desactivar corte de graves",
+                "setClipguard": "Activar/desactivar Clipguard",
+                "toggleGainLock": "Activar/desactivar bloqueo de ganancia",
+                "toggleHardwareMute": "Activar/desactivar silencio"
+            },
+            "setOutput": {
+                "label": "Submezcla"
+            },
+            "toggleOutput": {
+                "labelPrimary": "Principal",
+                "labelSecondary": "Secundario"
+            },
+            "outputSelection": {
+                "label": "Salida",
+                "local": "Mezcla de monitorización",
+                "stream": "Mezcla de streaming",
+                "all": "Todo",
+                "streamOut": "Añadir otra salida"
+            },
+            "volumeSelection": {
+                "label": "Tamaño del paso",
+                "mic": "Micrófono",
+                "pc": "PC"
+            },
+            "volumeRange": {
+                "setGain": "Ganancia",
+                "setMicPC": "Mezcla",
+                "setVol": "Volumen",
+                "mic": "Micrófono",
+                "pc": "PC"
+            },
+            "effectActions": {
+                "toggleEffect": "Activar/desactivar efecto",
+                "toggleEffectChain": "Activar/desactivar cadena de efectos"
+            },
+            "fadingSelection": {
+                "label": "Fundido",
+                "off": "Desactivar",
+                "500ms": "0,5",
+                "1000ms": "1,0",
+                "1500ms": "1,5",
+                "2000ms": "2,0",
+                "2500ms": "2,5",
+                "3000ms": "3,0",
+                "unit": " s"
+            },
+            "mixerSelection": {
+                "label": "Entrada",
+                "notAvailable": "No disponible",
+                "unknownInput": "Entrada desconocida"
+            },
+            "linkInputs": {
+                "label": "Vincular faders",
+                "on": "Activar",
+                "off": "Desactivar"
+            },
+            "switchProfile": {
+                "label": "Cambiar a"
+            },
+            "filterSelection": {
+                "label": "Efecto",
+                "noFilterFound": "No se ha encontrado ningún filtro."
+            },
+            "actionStyle": {
+                "label": "Estilo de icono",
+                "labelEncoder": "Estilo",
+                "static": "Estático",
+                "sliderHorizontal": "Fader (horizontal)",
+                "sliderVertical": "Fader (vertical)",
+                "sliderAndLevelmeterHorizontal": "Fader + medición de nivel (horizontal)",
+                "sliderAndLevelmeterVertical": "Fader + medición de nivel (vertical)",
+                "sliderAndLevelmeterEncoder": "Nivel + regulador de volumen",
+                "sliderEncoder": "Regulador de volumen",
+                "levelMeterEncoder": "Medición de nivel"
+            },
+            "actionSelection": {
+                "label": "Tipo",
+                "set": "Seleccionar",
+                "adjust": "Ajustar",
+                "mute": "Silenciar",
+                "add": "Añadir",
+                "toggleOutputMonitoring": "Activar/desactivar monitorización de salida",
+                "setOutputDevice": "Seleccionar salida",
+                "toggleOutputDevice": "Conmutar salida",
+                "hardwareSettings": "Administrar configuración"
+            },
+            "colored": {
+                "label": "Icono de color"
+            }
+        },
+        "Actions": {
+            "Common": {
+                "percentFirst": "",
+                "percentLast": "%",
+                "decibel": "dB",
+                "muted": "Silenciado"
+            },
+            "MicSettingsTouch": {
+                "adjustGain": "Ganancia",
+                "adjustOutput": "Volumen de salida",
+                "adjustMic/PcBalance": "Mezcla de micrófono/PC"
+            }
+        }
+    }
+}

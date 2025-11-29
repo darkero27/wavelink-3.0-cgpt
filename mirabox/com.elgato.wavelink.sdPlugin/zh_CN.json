@@ -1,0 +1,312 @@
+{
+    "Name": "Wave Link",
+    "Category": "Wave Link",
+    "Description": "控制 Elgato Wave Link 混音应用。",
+    "com.elgato.wavelink.inputaction": {
+        "Name": "输入源",
+        "Tooltip": "管理麦克风和 App 音量",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "调整",
+                "Touch": "静音"
+            }
+        }
+    },
+    "com.elgato.wavelink.mixermute": {
+        "Name": "输入源",
+        "Tooltip": "管理麦克风和 App 音量",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemixer": {
+        "Name": "输入源",
+        "Tooltip": "管理麦克风和 App 音量",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemixer": {
+        "Name": "输入源",
+        "Tooltip": "管理麦克风和 App 音量",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.outputaction": {
+        "Name": "输出设备",
+        "Tooltip": "管理显示器和直播混音",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "调整",
+                "Touch": "静音"
+            }
+        }
+    },
+    "com.elgato.wavelink.monitormute": {
+        "Name": "输出设备",
+        "Tooltip": "管理显示器和直播混音",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemonitor": {
+        "Name": "输出设备",
+        "Tooltip": "管理显示器和直播混音",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemonitor": {
+        "Name": "输出设备",
+        "Tooltip": "管理显示器和直播混音",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchmonitoring": {
+        "Name": "输出设备",
+        "Tooltip": "管理显示器和直播混音",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.hardwareaction": {
+        "Name": "设备",
+        "Tooltip": "管理音频硬件和设置",
+        "States": [
+            {
+                "Name": "静音"
+            },
+            {
+                "Name": "取消静音"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setmonitormixoutput": {
+        "Name": "设备",
+        "Tooltip": "管理音频硬件和设置"
+    },
+    "com.elgato.wavelink.togglemonitormixoutput": {
+        "Name": "设备",
+        "Tooltip": "管理音频硬件和设置"
+    },
+    "com.elgato.wavelink.setmicsettings": {
+        "Name": "设备",
+        "Tooltip": "管理音频硬件和设置"
+    },
+    "com.elgato.wavelink.effectaction": {
+        "Name": "效果",
+        "Tooltip": "管理均衡器和噪音消除等效果",
+        "States": [
+            {
+                "Name": "开"
+            },
+            {
+                "Name": "关"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffect": {
+        "Name": "效果",
+        "Tooltip": "管理均衡器和噪音消除等效果",
+        "States": [
+            {
+                "Name": "开"
+            },
+            {
+                "Name": "关"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffectchain": {
+        "Name": "效果",
+        "Tooltip": "管理均衡器和噪音消除等效果",
+        "States": [
+            {
+                "Name": "开"
+            },
+            {
+                "Name": "关"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchprofiles": {
+        "Name": "切换配置文件",
+        "Tooltip": "切换配置文件"
+    },
+    "Localization": {
+        "PI": {
+            "msgLaunchApp": "打开 Wave Link",
+            "msgUpdateApp": "更新 Wave Link App 以继续",
+            "msgUpdateAppForFeature": "更新 Wave Link App 以继续使用此功能",
+            "msgUpdateAppLink": "在此处下载",
+            "msgUpdatePlugin": "更新 Wave Link 插件以继续",
+            "msgPlatformNotSupported": "即将推出此功能",
+            "msgNoMicrophoneConnected": "连接一台 Wave 设备以继续",
+            "msgDeviceNotSupported": "与你的 Wave 设备不兼容",
+            "micSettings": {
+                "label": "操作",
+                "none": "请选择…",
+                "adjustGain": "调节增益",
+                "setGain": "设置增益",
+                "adjustOutput": "调节输出音量",
+                "setOutput": "设置输出音量",
+                "adjustMic/PcBalance": "调整麦克风/PC监听比",
+                "setMic/PcBalance": "设置麦克风/PC监听比",
+                "setLowcut": "开关低切",
+                "setClipguard": "开关Clipguard",
+                "toggleGainLock": "打开/关闭增益锁定",
+                "toggleHardwareMute": "静音/取消静音"
+            },
+            "setOutput": {
+                "label": "次级混音"
+            },
+            "toggleOutput": {
+                "labelPrimary": "首选",
+                "labelSecondary": "次选"
+            },
+            "outputSelection": {
+                "label": "输出",
+                "local": "监听混音",
+                "stream": "直播混音",
+                "all": "全部",
+                "streamOut": "添加更多输出设备"
+            },
+            "volumeSelection": {
+                "label": "调整单位",
+                "mic": "麦克风",
+                "pc": "PC"
+            },
+            "volumeRange": {
+                "setGain": "增益",
+                "setMicPC": "混音",
+                "setVol": "音量",
+                "mic": "麦克风",
+                "pc": "PC"
+            },
+            "effectActions": {
+                "toggleEffect": "切换效果",
+                "toggleEffectChain": "切换效果链"
+            },
+            "fadingSelection": {
+                "label": "淡入淡出",
+                "off": "关",
+                "500ms": "0.5",
+                "1000ms": "1.0",
+                "1500ms": "1.5",
+                "2000ms": "2.0",
+                "2500ms": "2.5",
+                "3000ms": "3.0",
+                "unit": " 秒"
+            },
+            "mixerSelection": {
+                "label": "输入",
+                "notAvailable": "不可用",
+                "unknownInput": "未知输入源"
+            },
+            "linkInputs": {
+                "label": "关联推子",
+                "on": "开",
+                "off": "关"
+            },
+            "switchProfile": {
+                "label": "切换到"
+            },
+            "filterSelection": {
+                "label": "效果",
+                "noFilterFound": "未找到过滤器。"
+            },
+            "actionStyle": {
+                "label": "图标样式",
+                "labelEncoder": "样式",
+                "static": "静态",
+                "sliderHorizontal": "推子（左右）",
+                "sliderVertical": "推子（上下）",
+                "sliderAndLevelmeterHorizontal": "推子 + 电平仪（左右）",
+                "sliderAndLevelmeterVertical": "推子 + 电平仪（上下）",
+                "sliderAndLevelmeterEncoder": "电平仪 + 音量滑块",
+                "sliderEncoder": "音量滑块",
+                "levelMeterEncoder": "电平仪"
+            },
+            "actionSelection": {
+                "label": "类型",
+                "set": "设置",
+                "adjust": "调整",
+                "mute": "静音",
+                "add": "添加",
+                "toggleOutputMonitoring": "切换监听线路",
+                "setOutputDevice": "设置输出设备",
+                "toggleOutputDevice": "打开/关闭输出设备",
+                "hardwareSettings": "管理设置"
+            },
+            "colored": {
+                "label": "彩色图标"
+            }
+        },
+        "Actions": {
+            "Common": {
+                "percentFirst": "",
+                "percentLast": "%",
+                "decibel": "分贝",
+                "muted": "已静音"
+            },
+            "MicSettingsTouch": {
+                "adjustGain": "增益",
+                "adjustOutput": "输出音量",
+                "adjustMic/PcBalance": "麦克风/PC 监听比"
+            }
+        }
+    }
+}

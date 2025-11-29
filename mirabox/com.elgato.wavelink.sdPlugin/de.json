@@ -1,0 +1,312 @@
+{
+    "Name": "Wave Link",
+    "Category": "Wave Link",
+    "Description": "Steuere das Audiomixing-Programm „Elgato Wave Link“.",
+    "com.elgato.wavelink.inputaction": {
+        "Name": "Eingang",
+        "Tooltip": "Verwalte deine Mikrofon- und Applautstärke",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "Anpassen",
+                "Touch": "Stumm"
+            }
+        }
+    },
+    "com.elgato.wavelink.mixermute": {
+        "Name": "Eingang",
+        "Tooltip": "Verwalte deine Mikrofon- und Applautstärke",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemixer": {
+        "Name": "Eingang",
+        "Tooltip": "Verwalte deine Mikrofon- und Applautstärke",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemixer": {
+        "Name": "Eingang",
+        "Tooltip": "Verwalte deine Mikrofon- und Applautstärke",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.outputaction": {
+        "Name": "Ausgang",
+        "Tooltip": "Verwalte deinen Monitor- und Stream-Mix",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "Anpassen",
+                "Touch": "Stumm"
+            }
+        }
+    },
+    "com.elgato.wavelink.monitormute": {
+        "Name": "Ausgang",
+        "Tooltip": "Verwalte deinen Monitor- und Stream-Mix",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemonitor": {
+        "Name": "Ausgang",
+        "Tooltip": "Verwalte deinen Monitor- und Stream-Mix",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemonitor": {
+        "Name": "Ausgang",
+        "Tooltip": "Verwalte deinen Monitor- und Stream-Mix",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchmonitoring": {
+        "Name": "Ausgang",
+        "Tooltip": "Verwalte deinen Monitor- und Stream-Mix",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.hardwareaction": {
+        "Name": "Gerät",
+        "Tooltip": "Verwalte deine Einstellungen und Audiohardware",
+        "States": [
+            {
+                "Name": "Stumm"
+            },
+            {
+                "Name": "Stumm aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setmonitormixoutput": {
+        "Name": "Gerät",
+        "Tooltip": "Verwalte deine Einstellungen und Audiohardware"
+    },
+    "com.elgato.wavelink.togglemonitormixoutput": {
+        "Name": "Gerät",
+        "Tooltip": "Verwalte deine Einstellungen und Audiohardware"
+    },
+    "com.elgato.wavelink.setmicsettings": {
+        "Name": "Gerät",
+        "Tooltip": "Verwalte deine Einstellungen und Audiohardware"
+    },
+    "com.elgato.wavelink.effectaction": {
+        "Name": "Effekte",
+        "Tooltip": "Verwalte Effekte wie EQ und Rauschunterdrückung",
+        "States": [
+            {
+                "Name": "Ein"
+            },
+            {
+                "Name": "Aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffect": {
+        "Name": "Effekte",
+        "Tooltip": "Verwalte Effekte wie EQ und Rauschunterdrückung",
+        "States": [
+            {
+                "Name": "Ein"
+            },
+            {
+                "Name": "Aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffectchain": {
+        "Name": "Effekte",
+        "Tooltip": "Verwalte Effekte wie EQ und Rauschunterdrückung",
+        "States": [
+            {
+                "Name": "Ein"
+            },
+            {
+                "Name": "Aus"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchprofiles": {
+        "Name": "Profil wechseln",
+        "Tooltip": "Profil wechseln"
+    },
+    "Localization": {
+        "PI": {
+            "msgLaunchApp": "Wave Link öffnen",
+            "msgUpdateApp": "Aktualisiere die Wave Link-App, um fortzufahren",
+            "msgUpdateAppForFeature": "Aktualisiere die Wave Link-App, um diese Funktion zu nutzen",
+            "msgUpdateAppLink": "Hier laden",
+            "msgUpdatePlugin": "Aktualisiere dein Wave Link-Plugin, um fortzufahren",
+            "msgPlatformNotSupported": "Diese Funktion ist bald verfügbar",
+            "msgNoMicrophoneConnected": "Verbinde ein Wave-Gerät, um fortzufahren",
+            "msgDeviceNotSupported": "Nicht kompatibel mit deinem Wave-Gerät",
+            "micSettings": {
+                "label": "Aktion",
+                "none": "Bitte wählen …",
+                "adjustGain": "Verstärkung anpassen",
+                "setGain": "Verstärkung einstellen",
+                "adjustOutput": "Ausgangslautstärke anpassen",
+                "setOutput": "Ausgangslautstärke einstellen",
+                "adjustMic/PcBalance": "Mikro/PC-Mix anpassen",
+                "setMic/PcBalance": "Mikro/PC-Mix einstellen",
+                "setLowcut": "Lowcut ein/aus",
+                "setClipguard": "Clipguard ein/aus",
+                "toggleGainLock": "Verstärkung sperren/entsperren",
+                "toggleHardwareMute": "Stumm ein/aus"
+            },
+            "setOutput": {
+                "label": "Submix"
+            },
+            "toggleOutput": {
+                "labelPrimary": "Primärkanal",
+                "labelSecondary": "Sekundärkanal"
+            },
+            "outputSelection": {
+                "label": "Ausgang",
+                "local": "Monitormix",
+                "stream": "Stream-Mix",
+                "all": "Alle",
+                "streamOut": "Zusätzlichen Ausgang hinzufügen"
+            },
+            "volumeSelection": {
+                "label": "Schrittgröße",
+                "mic": "Mikro",
+                "pc": "PC"
+            },
+            "volumeRange": {
+                "setGain": "Verstärkung",
+                "setMicPC": "Mix",
+                "setVol": "Lautstärke",
+                "mic": "Mikro",
+                "pc": "PC"
+            },
+            "effectActions": {
+                "toggleEffect": "Effekt ein/aus",
+                "toggleEffectChain": "Effektkette ein/aus"
+            },
+            "fadingSelection": {
+                "label": "Fading",
+                "off": "Aus",
+                "500ms": "0,5",
+                "1000ms": "1,0",
+                "1500ms": "1,5",
+                "2000ms": "2,0",
+                "2500ms": "2,5",
+                "3000ms": "3,0",
+                "unit": " Sek."
+            },
+            "mixerSelection": {
+                "label": "Eingang",
+                "notAvailable": "Nicht verfügbar",
+                "unknownInput": "Unbekannter Eingang"
+            },
+            "linkInputs": {
+                "label": "Fader verknüpfen",
+                "on": "Ein",
+                "off": "Aus"
+            },
+            "switchProfile": {
+                "label": "Wechseln zu"
+            },
+            "filterSelection": {
+                "label": "Effekt",
+                "noFilterFound": "Kein Filter gefunden."
+            },
+            "actionStyle": {
+                "label": "Icon-Stil",
+                "labelEncoder": "Stil",
+                "static": "Statisch",
+                "sliderHorizontal": "Fader (horizontal)",
+                "sliderVertical": "Fader (vertikal)",
+                "sliderAndLevelmeterHorizontal": "Fader + Pegelanzeige (horizontal)",
+                "sliderAndLevelmeterVertical": "Fader + Pegelanzeige (vertikal)",
+                "sliderAndLevelmeterEncoder": "Pegelanzeige + Lautstärkeregler",
+                "sliderEncoder": "Lautstärkeregler",
+                "levelMeterEncoder": "Pegelanzeige"
+            },
+            "actionSelection": {
+                "label": "Typ",
+                "set": "Anwenden",
+                "adjust": "Anpassen",
+                "mute": "Stumm",
+                "add": "Hinzufügen",
+                "toggleOutputMonitoring": "Ausgangsmonitoring ein/aus",
+                "setOutputDevice": "Ausgang festlegen",
+                "toggleOutputDevice": "Ausgang ein/aus",
+                "hardwareSettings": "Einstellung verwalten"
+            },
+            "colored": {
+                "label": "Farbe des Icon"
+            }
+        },
+        "Actions": {
+            "Common": {
+                "percentFirst": "",
+                "percentLast": " %",
+                "decibel": "dB",
+                "muted": "Stumm"
+            },
+            "MicSettingsTouch": {
+                "adjustGain": "Verstärkung",
+                "adjustOutput": "Ausgangslautstärke",
+                "adjustMic/PcBalance": "Mic/PC-Mix"
+            }
+        }
+    }
+}
