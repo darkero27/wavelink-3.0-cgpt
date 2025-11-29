@@ -1,0 +1,312 @@
+{
+    "Name": "Wave Link",
+    "Category": "Wave Link",
+    "Description": "Control the Elgato Wave Link audio mixing application.",
+    "com.elgato.wavelink.inputaction": {
+        "Name": "Input",
+        "Tooltip": "Manage your mic and app volume",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "Adjust",
+                "Touch": "Mute"
+            }
+        }
+    },
+    "com.elgato.wavelink.mixermute": {
+        "Name": "Input",
+        "Tooltip": "Manage your mic and app volume",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemixer": {
+        "Name": "Input",
+        "Tooltip": "Manage your mic and app volume",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemixer": {
+        "Name": "Input",
+        "Tooltip": "Manage your mic and app volume",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.outputaction": {
+        "Name": "Output",
+        "Tooltip": "Manage your monitor and stream mix",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ],
+        "Encoder": {
+            "TriggerDescription": {
+                "Rotate": "Adjust",
+                "Touch": "Mute"
+            }
+        }
+    },
+    "com.elgato.wavelink.monitormute": {
+        "Name": "Output",
+        "Tooltip": "Manage your monitor and stream mix",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setvolumemonitor": {
+        "Name": "Output",
+        "Tooltip": "Manage your monitor and stream mix",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.adjustvolumemonitor": {
+        "Name": "Output",
+        "Tooltip": "Manage your monitor and stream mix",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchmonitoring": {
+        "Name": "Output",
+        "Tooltip": "Manage your monitor and stream mix",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.hardwareaction" : {
+        "Name": "Device",
+        "Tooltip": "Manage your audio hardware and settings",
+        "States": [
+            {
+                "Name": "Mute"
+            },
+            {
+                "Name": "Unmute"
+            }
+        ]
+    },
+    "com.elgato.wavelink.setmonitormixoutput" : {
+        "Name": "Device",
+        "Tooltip": "Manage your audio hardware and settings"
+    },
+    "com.elgato.wavelink.togglemonitormixoutput" : {
+        "Name": "Device",
+        "Tooltip": "Manage your audio hardware and settings"
+    },
+    "com.elgato.wavelink.setmicsettings": {
+        "Name": "Device",
+        "Tooltip": "Manage your audio hardware and settings"
+    },
+    "com.elgato.wavelink.effectaction" : {
+        "Name": "Effects",
+        "Tooltip": "Manage effects like EQ and noise removal",
+        "States": [
+            {
+                "Name": "On"
+            },
+            {
+                "Name": "Off"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffect" : {
+        "Name": "Effects",
+        "Tooltip": "Manage effects like EQ and noise removal",
+        "States": [
+            {
+                "Name": "On"
+            },
+            {
+                "Name": "Off"
+            }
+        ]
+    },
+    "com.elgato.wavelink.seteffectchain": {
+        "Name": "Effects",
+        "Tooltip": "Manage effects like EQ and noise removal",
+        "States": [
+            {
+                "Name": "On"
+            },
+            {
+                "Name": "Off"
+            }
+        ]
+    },
+    "com.elgato.wavelink.switchprofiles": {
+        "Name": "Switch Profiles",
+        "Tooltip": "Switch profiles"
+    },
+    "Localization": {
+        "PI": {
+            "msgLaunchApp": "Open Wave Link",
+            "msgUpdateApp": "Update Wave Link app to continue",
+            "msgUpdateAppForFeature": "Update Wave Link app to use this feature",
+            "msgUpdateAppLink": "Download here",
+            "msgUpdatePlugin": "Update your Wave Link plugin to continue",
+            "msgPlatformNotSupported": "This feature is coming soon",
+            "msgNoMicrophoneConnected": "Connect a Wave device to continue",
+            "msgDeviceNotSupported": "Not compatible with your Wave device",
+            "micSettings": { 
+                "label": "Action",
+                "none": "Please select…",
+                "adjustGain": "Adjust Gain",
+                "setGain": "Set Gain",
+                "adjustOutput": "Adjust Output Volume",
+                "setOutput": "Set Output Volume",
+                "adjustMic/PcBalance": "Adjust Mic/PC Mix",
+                "setMic/PcBalance": "Set Mic/PC Mix",
+                "setLowcut": "Toggle Lowcut",
+                "setClipguard": "Toggle Clipguard",
+                "toggleGainLock": "Toggle Gain Lock",
+                "toggleHardwareMute": "Toggle Mute"
+            },
+            "setOutput": {
+                "label": "Submix"
+            },
+            "toggleOutput": {
+                "labelPrimary": "Primary",
+                "labelSecondary": "Secondary"
+            },
+            "outputSelection": {
+                "label": "Output",
+                "local": "Monitor Mix",
+                "stream": "Stream Mix",
+                "all": "All",
+                "streamOut": "Add Additional Output"
+            },
+            "volumeSelection": {
+                "label": "Step Size",
+                "mic": "Mic",
+                "pc": "PC"
+            },
+            "volumeRange": {
+                "setGain": "Gain",
+                "setMicPC": "Mix",
+                "setVol": "Volume",
+                "mic": "Mic",
+                "pc": "PC"
+            },
+            "effectActions": {
+                "toggleEffect": "Toggle Effect",
+                "toggleEffectChain": "Toggle Effect Chain"
+            },
+            "fadingSelection": {
+                "label": "Fading",
+                "off": "Off",
+                "500ms": "0.5",
+                "1000ms": "1.0",
+                "1500ms": "1.5",
+                "2000ms": "2.0",
+                "2500ms": "2.5",
+                "3000ms": "3.0",
+                "unit": " sec"
+            },
+            "mixerSelection": {
+                "label": "Input",
+                "notAvailable": "Not available",
+                "unknownInput": "Unknown input"
+            },
+            "linkInputs": {
+                "label": "Link Faders",
+                "on": "On",
+                "off": "Off"
+            },
+            "switchProfile": {
+                "label": "Switch to"
+            },
+            "filterSelection": {
+                "label": "Effect",
+                "noFilterFound": "No filter found."
+            },
+            "actionStyle": {
+                "label": "Icon Style",
+                "labelEncoder": "Style",
+                "static": "Static",
+                "sliderHorizontal": "Fader (horizontal)",
+                "sliderVertical": "Fader (vertical)",
+                "sliderAndLevelmeterHorizontal": "Fader + Level meter (horizontal)",
+                "sliderAndLevelmeterVertical": "Fader + Level meter (vertical)",
+                "sliderAndLevelmeterEncoder": "Level meter + Volume slider",
+                "sliderEncoder": "Volume slider",
+                "levelMeterEncoder": "Level meter"
+            },
+            "actionSelection": {
+                "label": "Type",
+                "set": "Set",
+                "adjust": "Adjust",
+                "mute": "Mute",
+                "add": "Add",
+                "toggleOutputMonitoring": "Toggle Output Monitoring",
+                "setOutputDevice": "Set output",
+                "toggleOutputDevice": "Toggle output",
+                "hardwareSettings": "Manage setting"
+            },
+            "colored": {
+                "label": "Color Icon"
+            }
+        },
+        "Actions": {
+            "Common": {
+                "percentFirst": "",
+                "percentLast": "%",
+                "decibel": "dB",
+                "muted": "Muted"
+            },
+            "MicSettingsTouch": {
+                "adjustGain": "Gain",
+                "adjustOutput": "Output Volume",
+                "adjustMic/PcBalance":"Mic/PC Mix"
+            }
+        }
+    }
+}

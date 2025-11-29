@@ -1,0 +1,135 @@
+class EffectAction extends WaveLinkAction {
+    constructor(uuid) {
+
+        super(uuid);
+
+        this.onKeyUp(async ({ context, payload }) => {
+            const { settings } = payload;
+            const { isInMultiAction } = payload;
+
+            try {
+                const input = this.wlc.getInput(settings.identifier);
+
+                if (input && input.isAvailable && input.filters && input.filters.length > 0) {
+                    switch (settings.actionType) {
+                        case ActionType.SetEffect:
+							const filter = input.filters.find(filter => filter.filterID == settings.filterID);
+
+							if (filter == undefined)
+								throw `Error: Filter not available.`
+
+                            const newState = isInMultiAction ? !payload.userDesiredState : !filter?.isActive;
+
+                            this.wlc.setFilterConfig(input.identifier, settings.filterID, newState);
+                            break;
+                        case ActionType.SetEffectChain:
+                            const filterBypass = isInMultiAction ? !!payload.userDesiredState : settings.mixerID == kPropertyMixerIDLocal ? !input.local.filterBypass : !input.stream.filterBypass;
+
+                            this.wlc.setFilterBypass(input.identifier, settings.mixerID, filterBypass);
+                            break;
+                        default:
+                            throw `Action not selected`;
+                    }
+                } else {
+                    throw `Error: ${input.isAvailable ? "" : "Input is not available"}${input.filters.length > 0 ? "" : "No input filters found"}`
+                }
+            } catch (error) {
+                $SD.showAlert(context);
+                console.error(error);
+            } 
+        });
+
+        this.wlc.onEvent(kJSONPropertyInputsChanged, () => {
+            this.actions.forEach((action, context) => {
+                this.setKeyIcons(context);
+                this.setState(context);
+                this.setTitle(context);
+            });
+        });
+
+        this.wlc.onEvent(kJSONPropertyFilterChanged, (payload) => {
+            this.actions.forEach((action, context) => {
+                const { settings } = this.actions.get(context);
+                const identifier   = this.wlc.getInput(settings.identifier)?.identifier;
+
+                if (identifier == payload.identifier && settings.filterID == payload.filterID) {
+                    this.setState(context);
+                    this.setTitle(context);
+                }
+            });
+        });
+        
+        this.wlc.onEvent(kJSONPropertyFilterBypassStateChanged, (payload) => {
+            this.actions.forEach((action, context) => {
+                const { settings } = this.actions.get(context);
+                const identifier   = this.wlc.getInput(settings.identifier)?.identifier;
+
+                if (identifier == payload.identifier) {
+                    this.setState(context);
+                }
+            });
+        });
+    }
+
+    setKeyIcons(context) {
+        const settings   = this.actions.get(context).settings;
+        const isDisabled = !this.isAppStateOk();
+
+        var iconOn, iconOff;
+
+        switch (settings.actionType) {
+            case ActionType.SetEffect:
+                iconOn = 'toggleEffectOn';
+                iconOff = 'toggleEffectOff';
+                break;
+            case ActionType.SetEffectChain:
+                iconOn = 'toggleEffectChainOn';
+                iconOff = 'toggleEffectChainOff';
+                break;
+            default:
+                iconOn = iconOff = kPropertyDefault;
+                break;
+        }
+
+        const input           = this.wlc.getInput(settings.identifier);
+        const filter          = input?.filters ? input.filters.find(f => f.filterID == settings.filterID) : undefined;
+        const filterName      = filter?.name || '';
+        const showTitle       = this.actions.get(context)?.title != undefined && this.actions.get(context)?.title != "";
+        const showText        = settings.actionType == ActionType.SetEffect && !showTitle ? 'text' : '';
+        const disabledOverlay = isDisabled ? 'disabled' : '';
+
+        const svgIcon         = this.awl.keyIconsEffect[iconOn];
+        const svgIcon2        = this.awl.keyIconsEffect[iconOff];
+
+        svgIcon.fontSize      = { lower: 26 };
+        svgIcon2.fontSize     = { lower: 26 };
+
+        svgIcon.text          =  isDisabled ? { lower: '--' } : { lower: `${this.fixName(filterName, 8)}` };
+        svgIcon2.text         =  isDisabled ? { lower: '--' } : { lower: `${this.fixName(filterName, 8)}` };
+
+        svgIcon.layerOrder    = ['background', 'icon', showText, disabledOverlay];
+        svgIcon2.layerOrder   = ['background', 'icon', showText, disabledOverlay];
+
+
+        $SD.setImage(context, svgIcon.toBase64(true), 0);
+        $SD.setImage(context, svgIcon2.toBase64(true), 1);
+    }
+
+    setState(context) {
+        const settings = this.actions.get(context).settings;
+        const input    = this.wlc.getInput(settings.identifier);
+
+        if (input && input.filters) {
+            if (settings.actionType == ActionType.SetEffect) {
+                const filter = input.filters ? input.filters.find(f => f.filterID == settings.filterID) : undefined;
+
+                if (filter) {
+                    $SD.setState(context, +!filter.isActive)
+                }
+            } else if (settings.actionType == ActionType.SetEffectChain) {
+                const filterBypassState = settings.mixerID == kPropertyMixerIDLocal ? +input.local.filterBypass : +input.stream.filterBypass;
+                $SD.setState(context, filterBypassState);
+            }
+        }
+    }
+};
